@@ -10,7 +10,7 @@ Route::middleware('guest')->group(function () {
     Route::get('/', [LandingPageController::class, 'landingPage'])->name('home');
     Route::get('/services', [BiomedServicesController::class, 'mainPage'])->name('biomed-services');
 
-    // Route::view('/services', 'frontend.pages.services')->name('services');
+    Route::view('/services', 'frontend.pages.services')->name('services');
     Route::get('/rental', [RentalServiceController::class, 'landingPage'])->name('rental-services');
     Route::view('/about', 'frontend.pages.about')->name('about');
 
@@ -27,4 +27,6 @@ Route::middleware('guest')->group(function () {
     Route::view('/feedback', 'frontend.pages.feedback')->name('feedback');
 
     Route::get('/get-cities/{state_id}', [LandingPageController::class, 'getCities'])->name('get.cities');
+    Route::view('/faqs', 'frontend.pages.faqs')->name('faqs');
+
 });

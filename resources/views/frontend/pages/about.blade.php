@@ -430,46 +430,6 @@
             object-fit: contain;
             border-radius: 10px;
         }
-
-
-
-        /* ========== brand slider ==================== */
-
-        .brand-slider {
-            padding: 30px 0;
-            background: #fff;
-            overflow: hidden;
-            margin-top: 70px;
-        }
-
-        /* 👉 Flip container horizontally */
-        .swiper {
-            /* transform: scaleX(-1); */
-        }
-
-        /* 👉 Flip slides back to normal */
-        .swiper-slide {
-            /* transform: scaleX(-1); */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-        }
-
-        .brand-slider img {
-            width: 100%;
-            height: 120px;
-            /* filter: grayscale(100%); */
-            /* opacity: 0.8; */
-            transition: 0.3s;
-        }
-
-        .brand-slider img:hover {
-            /* filter: grayscale(0); */
-            opacity: 1;
-            transform: scale(1.05);
-
-        }
     </style>
 @endpush
 
@@ -884,7 +844,7 @@
                             <i class="bi bi-check choose-icon"></i>
 
                             <!-- <div class="choose-icon">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div> -->
                             <h4 class="choose-heading">20 Years Experience</h4>
                         </div>
                         <p class="choose-desc">

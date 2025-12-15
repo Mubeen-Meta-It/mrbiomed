@@ -10,7 +10,7 @@
             height: 583px;
             overflow: hidden;
             /* display: flex;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                align-items: center; */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    align-items: center; */
             /* padding-left: 60px;  */
             color: #fff;
         }
@@ -204,7 +204,7 @@
             </p>
 
             <div class="container py-5 text-center text-white">
-                <div class="simple-breadcrumb-container text-start mx-auto">
+                <div class="simple-breadcrumb-container text-start mx-auto fade-right">
                     <div class="simple-breadcrumb">
 
                         <a href="/" class="breadcrumb-link">Home</a>
@@ -224,7 +224,7 @@
         <div class="video-overlay"></div>
 
         <!-- Background Video -->
-        <video class="bg-video" autoplay muted loop playsinline>
+        <video class="bg-video " autoplay muted loop playsinline>
             <source src="{{ asset('frontend/images/repair/WhatsApp Video 2025-11-26 at 12.40.40 AM.mp4') }}"
                 type="video/mp4">
         </video>
@@ -238,7 +238,7 @@
                             We provide professional repair and maintenance services for all types of medical equipment.
                             High-quality service with expert biomedical technicians.
                         </p>
-                        <a href="#" class="service-btn">Schedule Your Service Today</a>
+                        <a href="#" class="service-btn fade-left">Schedule Your Service Today</a>
                     </div>
                 </div>
             </div>
@@ -253,8 +253,10 @@
             <div class="container text-center mb-5">
                 <div class="row">
                     <div class="col-md-8 mx-auto">
-                        <h2 class="main-heading">Medical Equipment Calibration <span>and Repairing Services </span> </h2>
-                        <p class=" xray-desc"> centers.quipment available for hospitals and emergency healthcare centers.
+                        <h2 class="main-heading fade-left">Medical Equipment Calibration <span>and Repairing Services
+                            </span> </h2>
+                        <p class=" xray-desc fade-right"> centers.quipment available for hospitals and emergency healthcare
+                            centers.
                             centers.quipment available for hospitals and emergency healthcare centersemergency healthcare
                             centers.
                             centers.quipment available for hospitals and emergency healthcare centers</p>
@@ -265,8 +267,8 @@
                 <div class="row g-4">
 
                     <!-- Card 1 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="xray-card p-3">
+                    <div class="col-lg-3 col-md-6 animate-card">
+                        <div class="xray-card p-3 ">
                             <h3 class="xray-title ">
                                 X-Ray Rent, Sales & Repair Services in Austin TX
                             </h3>
@@ -283,8 +285,8 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="xray-card p-3">
+                    <div class="col-lg-3 col-md-6 animate-card">
+                        <div class="xray-card p-3 ">
                             <h3 class="xray-title">X-Ray Rent, Sales & Repair Services in Austin TX</h3>
                             <p class="xray-desc">
                                 Affordable X-Ray equipment suitable for clinics, hospitals, and home-based healthcare
@@ -300,8 +302,8 @@
 
 
                     <!-- Card 3 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="xray-card p-3">
+                    <div class="col-lg-3 col-md-6 animate-card">
+                        <div class="xray-card p-3 ">
                             <h3 class="xray-title color-animate">
                                 <span> X-Ray Rent, Sales & Repair Services </span>
                                 <span> in Austin TX </span>
@@ -320,8 +322,8 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="xray-card p-3">
+                    <div class="col-lg-3 col-md-6 animate-card">
+                        <div class="xray-card p-3 ">
                             <h3 class="xray-title">X-Ray Rent, Sales & Repair Services in Austin TX</h3>
                             <p class="xray-desc">
                                 Affordable X-Ray equipment suitable for clinics, hospitals, and home-based healthcare
@@ -344,8 +346,9 @@
             <div class="container text-center mb-5">
                 <div class="row">
                     <div class="col-md-8 mx-auto">
-                        <h2 class="main-heading">X-Ray <span>Rent, Sales & Repairing Services</span> </h2>
-                        <p class=" xray-desc"> centers.quipment available for hospitals and emergency healthcare centers.
+                        <h2 class="main-heading fade-left">X-Ray <span>Rent, Sales & Repairing Services</span> </h2>
+                        <p class=" xray-desc fade-right"> centers.quipment available for hospitals and emergency healthcare
+                            centers.
                             centers.quipment available for hospitals and emergency healthcare centersemergency healthcare
                             centers.
                             centers.quipment available for hospitals and emergency healthcare centers</p>
@@ -356,8 +359,8 @@
                 <div class="row g-4">
 
                     <!-- Card 1 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="xray-card p-3">
+                    <div class="col-lg-3 col-md-6 animate-card">
+                        <div class="xray-card p-3 ">
                             <h3 class="xray-title ">
                                 X-Ray Rent, Sales & Repair Services in Austin TX
                             </h3>
@@ -374,8 +377,8 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="xray-card p-3">
+                    <div class="col-lg-3 col-md-6 animate-card">
+                        <div class="xray-card p-3 ">
                             <h3 class="xray-title">X-Ray Rent, Sales & Repair Services in Austin TX</h3>
                             <p class="xray-desc">
                                 Affordable X-Ray equipment suitable for clinics, hospitals, and home-based healthcare
@@ -391,8 +394,8 @@
 
 
                     <!-- Card 3 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="xray-card p-3">
+                    <div class="col-lg-3 col-md-6 animate-card">
+                        <div class="xray-card p-3 ">
                             <h3 class="xray-title color-animate">
                                 <span> X-Ray Rent, Sales & Repair Services </span>
                                 <span> in Austin TX </span>
@@ -411,8 +414,8 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="xray-card p-3">
+                    <div class="col-lg-3 col-md-6 animate-card">
+                        <div class="xray-card p-3 ">
                             <h3 class="xray-title">X-Ray Rent, Sales & Repair Services in Austin TX</h3>
                             <p class="xray-desc">
                                 Affordable X-Ray equipment suitable for clinics, hospitals, and home-based healthcare
@@ -434,8 +437,9 @@
             <div class="container text-center mb-5">
                 <div class="row">
                     <div class="col-md-8 mx-auto">
-                        <h2 class="main-heading">C-Arm <span>Rent, Sales, and Repairing Services</span> </h2>
-                        <p class="xray-desc"> centers.quipment available for hospitals and emergency healthcare centers.
+                        <h2 class="main-heading fade-left">C-Arm <span>Rent, Sales, and Repairing Services</span> </h2>
+                        <p class="xray-desc fade-right"> centers.quipment available for hospitals and emergency healthcare
+                            centers.
                             centers.quipment available for hospitals and emergency healthcare centersemergency healthcare
                             centers.
                             centers.quipment available for hospitals and emergency healthcare centers</p>
@@ -446,8 +450,8 @@
                 <div class="row g-4 justify-content-center">
 
                     <!-- Card 1 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="xray-card p-3">
+                    <div class="col-lg-3 col-md-6 animate-card">
+                        <div class="xray-card p-3 ">
                             <h3 class="xray-title reveal-lines">
                                 X-Ray Rent, Sales & Repair Services in Austin TX
                             </h3>
@@ -462,8 +466,8 @@
                             <button class="xray-btn">Read More</button>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="xray-card p-3">
+                    <div class="col-lg-3 col-md-6 animate-card">
+                        <div class="xray-card p-3 ">
                             <h3 class="xray-title ">
                                 X-Ray Rent, Sales & Repair Services in Austin TX
                             </h3>
@@ -479,8 +483,8 @@
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="xray-card p-3">
+                    <div class="col-lg-3 col-md-6 animate-card">
+                        <div class="xray-card p-3 ">
                             <h3 class="xray-title">X-Ray Rent, Sales & Repair Services in Austin TX</h3>
                             <p class="xray-desc">
                                 Affordable X-Ray equipment suitable for clinics, hospitals, and home-based healthcare
@@ -496,8 +500,8 @@
 
 
                     <!-- Card 3 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="xray-card p-3">
+                    <div class="col-lg-3 col-md-6 animate-card">
+                        <div class="xray-card p-3 ">
                             <h3 class="xray-title color-animate">
                                 <span> X-Ray Rent, Sales & Repair Services </span>
                                 <span> in Austin TX </span>
@@ -516,8 +520,8 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="xray-card p-3">
+                    <div class="col-lg-3 col-md-6 animate-card">
+                        <div class="xray-card p-3 ">
                             <h3 class="xray-title">X-Ray Rent, Sales & Repair Services in Austin TX</h3>
                             <p class="xray-desc">
                                 Affordable X-Ray equipment suitable for clinics, hospitals, and home-based healthcare
@@ -541,19 +545,19 @@
             <h2 class="special-section-title">Specialized Services in <span>Mr biomed Tech, TX</span> </h2>
 
             <div class="card-wrapper">
-                <div class="service-card">
+                <div class="service-card ">
                     <h3>ipsum illo maxime? Accusamus repellendus eveniet</h3>
                 </div>
 
-                <div class="service-card">
+                <div class="service-card ">
                     <h3>Anesthesia Machine Repairing and Certification </h3>
                 </div>
 
-                <div class="service-card">
+                <div class="service-card ">
                     <h3>IV Pump Services</h3>
                 </div>
 
-                <div class="service-card">
+                <div class="service-card ">
                     <h3>Life Safety and Electrical Safety Serives</h3>
                 </div>
             </div>
@@ -583,9 +587,9 @@
             <div class="row g- justify-content-center mx-5">
 
                 <!-- CARD 1 -->
-                <div class="col-lg-4 col-md-6 justify-content-center">
-                    <div class="oem-card">
-                        <div class="oem-img-box">
+                <div class="col-lg-4 col-md-6 justify-content-center animate-card">
+                    <div class="oem-card ">
+                        <div class="oem-img-box ">
                             <img src="{{ asset('frontend/images/chief-img.jpg') }}" alt="oem-img"
                                 class="oem-img img-fluid">
                             <h4 class="oem-card-title">High Quality Equipment</h4>
@@ -604,8 +608,8 @@
                 </div>
 
                 <!-- CARD 2 -->
-                <div class="col-lg-4 col-md-6 justify-content-center">
-                    <div class="oem-card">
+                <div class="col-lg-4 col-md-6 justify-content-center animate-card">
+                    <div class="oem-card ">
                         <div class="oem-img-box">
                             <img src="{{ asset('frontend/images/chief-img.jpg') }}" alt="oem-img"
                                 class="oem-img img-fluid">
@@ -626,8 +630,8 @@
                 </div>
 
                 <!-- CARD 3 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="oem-card">
+                <div class="col-lg-4 col-md-6 animate-card">
+                    <div class="oem-card ">
                         <div class="oem-img-box">
                             <img src="{{ asset('frontend/images/chief-img.jpg') }}" alt="oem-img"
                                 class="oem-img img-fluid">
@@ -646,7 +650,7 @@
                     </div>
                 </div>
                 <div class="text-center mt-5">
-                    <button class=" btn-lgg">
+                    <button class=" btn-lgg ">
                         Talk to Expert
                     </button>
                 </div>
@@ -669,7 +673,7 @@
                             <i class="bi bi-check choose-icon"></i>
 
                             <!-- <div class="choose-icon">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div> -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </div> -->
                             <h4 class="choose-heading">20 Years Experience</h4>
                         </div>
                         <p class="choose-desc">
@@ -1052,89 +1056,191 @@
     {{-- ============= reveiw sectiion ================== --}}
 
     <section>
-        <h2 class="review-heading">Our Users Are <span>Happy And Healthy</span> </h2>
-        <section class="review-slider-section">
-            <div class="review-slider-wrapper">
-                <div class="review-slider" id="reviewSlider">
+        <h2 class="review-heading">Our Users Are <span>Happy And Healthy</span></h2>
 
-                    <div class="tooltip-slide">
-                        <img src="{{ asset('frontend/images/hero-img-1.jpg') }}" alt="Hero 1">
-                        <div class="tooltip-box">
-                            <div class="stars">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="far fa-star text-warning"></i>
+        <div class="container">
+
+            <div class="mx-auto main-wrapper" style="width:1100px;">
+
+                <div class="swiper reviewSwiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide tooltip-slide">
+                            <img src="{{ asset('frontend/images/hero-img-1.jpg') }}" alt="">
+                            <div class="tooltip-box">
+                                <div class="starss">
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas diff fa-star "></i>
+                                </div>
+                                <p>
+
+                                    <span class="quote">“</span> "Pharmacy Store is my go-to for over-the-counter
+                                    medications and health products. They
+                                    have a wide selection, and their website makes it easy to order online. The only
+                                    improvement I'd suggest is expanding their beauty and skincare section."
+                                </p>
                             </div>
-                            <p>Pharmacy Store is my go-to.</p>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide tooltip-slide">
+                            <img src="{{ asset('frontend/images/hero-img-4.jpg') }}">
+                            <div class="tooltip-box">
+                                <div class="starss">
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star diff"></i>
+                                </div>
+                                <p>
+                                    <span class="quote">“</span>
+                                    "Pharmacy Store is my go-to for over-the-counter medications and health products. They
+                                    have a wide selection, and their website makes it easy to order online. The only
+                                    improvement I'd suggest is expanding their beauty and skincare section."
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide tooltip-slide">
+                            <img src="{{ asset('frontend/images/hero-img-3.jpg') }}">
+                            <div class="tooltip-box">
+                                <div class="starss">
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star diff"></i>
+                                </div>
+                                <p>
+                                    <span class="quote">“</span>
+                                    "Pharmacy Store is my go-to for over-the-counter medications and health products. They
+                                    have a wide selection, and their website makes it easy to order online. The only
+                                    improvement I'd suggest is expanding their beauty and skincare section."
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide tooltip-slide">
+                            <img src="{{ asset('frontend/images/hero-img-2.jpg') }}">
+                            <div class="tooltip-box">
+                                <div class="starss">
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star diff "></i>
+                                </div>
+                                <p>
+                                    <span class="quote">“</span>
+                                    "Pharmacy Store is my go-to for over-the-counter medications and health products. They
+                                    have a wide selection, and their website makes it easy to order online. The only
+                                    improvement I'd suggest is expanding their beauty and skincare section."
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide tooltip-slide">
+                            <img src="{{ asset('frontend/images/hero-img-1.jpg') }}">
+                            <div class="tooltip-box">
+                                <div class="starss">
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas diff fa-star "></i>
+                                </div>
+                                <p>
+                                    <span class="quote">“</span>
+                                    "Pharmacy Store is my go-to for over-the-counter medications and health products. They
+                                    have a wide selection, and their website makes it easy to order online. The only
+                                    improvement I'd suggest is expanding their beauty and skincare section."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tooltip-slide">
+                            <img src="{{ asset('frontend/images/hero-img-1.jpg') }}">
+                            <div class="tooltip-box">
+                                <div class="starss">
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star diff"></i>
+                                </div>
+                                <p>
+                                    <span class="quote">“</span>
+                                    "Pharmacy Store is my go-to for over-the-counter medications and health products. They
+                                    have a wide selection, and their website makes it easy to order online. The only
+                                    improvement I'd suggest is expanding their beauty and skincare section."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tooltip-slide">
+                            <img src="{{ asset('frontend/images/hero-img-1.jpg') }}">
+                            <div class="tooltip-box">
+                                <div class="starss">
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star diff"></i>
+                                </div>
+                                <p>
+                                    <span class="quote">“</span>
+                                    "Pharmacy Store is my go-to for over-the-counter medications and health products. They
+                                    have a wide selection, and their website makes it easy to order online. The only
+                                    improvement I'd suggest is expanding their beauty and skincare section."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tooltip-slide">
+                            <img src="{{ asset('frontend/images/hero-img-1.jpg') }}">
+                            <div class="tooltip-box">
+                                <div class="starss">
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star diff"></i>
+                                </div>
+                                <p>
+                                    <span class="quote">“</span>
+                                    "Pharmacy Store is my go-to for over-the-counter medications and health products. They
+                                    have a wide selection, and their website makes it easy to order online. The only
+                                    improvement I'd suggest is expanding their beauty and skincare section."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tooltip-slide">
+                            <img src="{{ asset('frontend/images/hero-img-1.jpg') }}">
+                            <div class="tooltip-box">
+                                <div class="starss">
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star diff"></i>
+                                </div>
+                                <p>
+                                    <span class="quote">“</span>
+                                    "Pharmacy Store is my go-to for over-the-counter medications and health products. They
+                                    have a wide selection, and their website makes it easy to order online. The only
+                                    improvement I'd suggest is expanding their beauty and skincare section."
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="tooltip-slide">
-                        <img src="{{ asset('frontend/images/hero-img-4.jpg') }}" alt="Hero 1">
-                        <div class="tooltip-box">
-                            <div class="stars">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="far fa-star text-warning"></i>
-                            </div>
-                            <p>Great service.</p>
-                        </div>
-                    </div>
-
-                    <div class="tooltip-slide">
-                        <img src="{{ asset('frontend/images/hero-img-3.jpg') }}" alt="Hero 1">
-                        <div class="tooltip-box">
-                            <div class="stars">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="far fa-star text-warning"></i>
-                            </div>
-                            <p>Good products.</p>
-                        </div>
-                    </div>
-
-                    <div class="tooltip-slide">
-                        <img src="{{ asset('frontend/images/hero-img-2.jpg') }}" alt="Hero 1">
-                        <div class="tooltip-box">
-                            <div class="stars">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="far fa-star text-warning"></i>
-                            </div>
-                            <p>Reliable quality.</p>
-                        </div>
-                    </div>
-
-                    <div class="tooltip-slide">
-                        <img src="{{ asset('frontend/images/hero-img-1.jpg') }}" alt="Hero 1">
-                        <div class="tooltip-box">
-                            <div class="stars">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="far fa-star text-warning"></i>
-                            </div>
-                            <p>Affordable prices.</p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-
-        </section>
-
-        <div>
-
-
+        </div>
     </section>
 
     {{-- ============recent news section ============ --}}
