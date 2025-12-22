@@ -14,7 +14,6 @@ use App\Http\Controllers\RentalServiceController;
 use App\Http\Controllers\RepairServiceController;
 use App\Http\Controllers\ReviewsController;
 use App\Http\Controllers\TermsAndConditionsController;
-use App\Models\LandingPage;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest')->group(function () {
