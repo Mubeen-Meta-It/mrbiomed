@@ -619,7 +619,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const index = Array.from(rowCards).indexOf(card);
 
             // Row-wise delay (reset)
-            const delay = index * 500; // 0, 300, 600...
+            const delay = index * 380; // 0, 300, 600...
 
             card.style.setProperty('--delay', `${delay}ms`);
             card.classList.add('show');
@@ -813,37 +813,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // ============= moddel open js =====================
 
-
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
 
     const overlay = document.getElementById('buyFormOverlay');
 
-    // Overlay hi nahi hai to script stop
+    // Agar overlay exist hi nahi karta to script stop
     if (!overlay) return;
 
+    const openBtns = document.querySelectorAll('[data-open-form]');
+    const closeBtn = overlay.querySelector('.close-form');
+
     // Open form
-    document.querySelectorAll('[data-open-form]').forEach(btn => {
-        btn.addEventListener('click', () => {
+    openBtns.forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
             overlay.classList.add('active');
         });
     });
 
-    // Close form (safe check)
-    const closeBtn = overlay.querySelector('.close-form');
+    // Close form (close button)
     if (closeBtn) {
-        closeBtn.addEventListener('click', () => {
+        closeBtn.addEventListener('click', function () {
             overlay.classList.remove('active');
         });
     }
 
-    // Click outside close
-    overlay.addEventListener('click', (e) => {
+    // Close form (overlay background click)
+    overlay.addEventListener('click', function (e) {
         if (e.target === overlay) {
             overlay.classList.remove('active');
         }
     });
 
 });
+
+
 
 // ====================== home category slider ===============================
 
