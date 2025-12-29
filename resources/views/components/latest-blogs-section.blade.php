@@ -5,14 +5,14 @@
         </h2>
 
         <div class="category-slider-wrapper mt-5">
-            <button class="cat-btn prev-btn">&#10094;</button>
+            <button class="cat-bttn prev-btn">&#10094;</button>
             <div class="category-slider">
                 <div class="cat-item active" data-slug="all">All Blogs</div>
                 @foreach ($categories as $category)
                     <div class="cat-item" data-slug="{{ $category->slug }}">{{ $category->name }}</div>
                 @endforeach
             </div>
-            <button class="cat-btn next-btn">&#10095;</button>
+            <button class="cat-bttn next-btn">&#10095;</button>
         </div>
     </div>
 
@@ -39,7 +39,6 @@
 
         function fetchBlogs(slug, page = 1) {
             activeSlug = slug;
-
             container.innerHTML = `
             <div class="col-12 text-center py-5">
                 <div class="spinner-border text-primary"></div>
