@@ -7,7 +7,7 @@
                  <!--Column -->
                  @foreach ($links as $link)
                      <div class="col-lg-4 col-md-6  ">
-                         <div class="custom-card">
+                         <div class="policy-card">
                              <h4 class="card-title">{{ $link->title }}</h4>
                              <p class="card-desc">
                                  {{ $link->subtitle ?? '' }}

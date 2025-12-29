@@ -8,17 +8,20 @@
 
 @push('frontend-styles')
     <style>
-        .custom-card {
+        .policy-card {
             width: 327px;
-            height: 258px;
+            min-height: 258px;
+            /* fixed height ki jagah */
             border: 3px solid #076FA1;
             box-shadow: 0px 4px 14.8px #5BC3C4;
-            padding: 20px;
+            padding: 20px 20px 70px;
+            /* bottom space for button */
             border-radius: 30px;
             position: relative;
         }
 
-        .custom-card .card-title {
+
+        .policy-card .card-title {
             font-size: 22px;
             font-weight: 700;
             color: #0071A8;
@@ -27,7 +30,7 @@
             line-height: 100%;
         }
 
-        .custom-card .card-desc {
+        .policy-card .card-desc {
             font-size: 16px;
             color: #121212B2;
             margin-bottom: 20px;
@@ -35,16 +38,14 @@
             font-family: Poppins;
             font-weight: 500;
             line-height: 160%;
+            max-width: 263px;
         }
 
 
-        .custom-btn {
+        .policy-card .custom-btn {
             display: flex;
-            /* Centering works now */
             justify-content: center;
-            /* Horizontal center */
             align-items: center;
-            /* Vertical center */
             background: #0168A4;
             font-size: 18px;
             color: #fff;
@@ -55,7 +56,7 @@
             height: 43px;
             box-shadow: 0px 4px 4px #00000040;
             position: absolute;
-            bottom: 20px;
+            bottom: 10px;
             left: 18px;
             font-family: Inter;
             line-height: 100%;

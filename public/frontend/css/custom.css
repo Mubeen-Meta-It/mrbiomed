@@ -12,7 +12,7 @@
 
      .product-section,
      .product-section * {
-         position: static !important;
+         /* position: static !important; */
      }
  }
 
@@ -425,7 +425,7 @@
  }
 
  .nav-mega-btn:hover {
-     width: 172px;
+     /* width: 135px; */
      transform: scale(1.04)
  }
 
@@ -1355,26 +1355,29 @@
  }
 
 
- .offer-card .read-btn {
+ .offer-card .readd-btn {
      background: #ffffff;
      color: #0168A4;
      border: 1px solid #FE0000D9;
-     padding: 7px 10px;
+     /* padding: 7px 10px; */
+     height: 29px;
      border-radius: 20px;
+     width: 125px;
      margin-top: 8px;
      font-size: 18px;
      font-weight: 700;
-     font-family: Inter, sans-serif;
+     font-family: Inter;
      position: absolute;
+     line-height: 100%;
      bottom: 15px;
      left: 25%;
      transition: all 0.4s ease-in-out;
  }
 
- .offer-card .read-btn:hover {
+ .offer-card .readd-btn:hover {
      background: #0168A4;
      box-shadow: 0px 1px 5px #262727;
-     transform: scale(1.03) translateY(-5px);
+     transform: scale(1.01);
      color: #ffffff;
      border: none;
 
@@ -3037,6 +3040,7 @@
  .news-card {
      border: none;
      transition: transform 0.3s ease, box-shadow 0.3s ease;
+     height: 388px;
  }
 
  .news-card:hover {
@@ -3045,8 +3049,8 @@
  }
 
  .news-card img {
-     height: 180px;
-     width: 280;
+     height: 178.52px;
+     width: 279.27px;
      background-size: cover;
  }
 

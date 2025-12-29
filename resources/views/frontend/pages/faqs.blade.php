@@ -33,7 +33,22 @@
             z-index: -5;
         }
 
+        @media(max-width: 768px) {
+            .faq-section::before {
+                content: "";
+                position: absolute;
+                top: 44%;
+                left: 50%;
+                width: 100% !important;
+                height: 55% !important;
 
+            }
+
+            .faq-section {
+
+                height: 100vh !important;
+            }
+        }
 
         /* 🎨 OVERLAY LAYER */
         .faq-section::after {

@@ -11,11 +11,9 @@
             position: relative;
             display: flex;
             justify-content: center;
-            /* slider center */
             align-items: center;
             gap: 15px;
             width: 100%;
-            /* full width */
         }
 
         .latest-blog-heading {
@@ -36,7 +34,6 @@
             overflow: hidden;
             width: 100%;
             max-width: 800px;
-            /* 6 categories visible (125px each approx) */
         }
 
         .cat-item {
@@ -54,6 +51,15 @@
 
         }
 
+
+        @media (max-width: 768px) {
+
+
+            .boddyy {
+                height: auto !important;
+            }
+        }
+
         @media (max-width: 575px) {
             .cat-item {
                 min-width: 90px;
@@ -63,11 +69,15 @@
                 font-size: 40px !important;
 
             }
+
+            .boddyy {
+                height: auto !important;
+            }
         }
 
 
         /* Prev / Next Buttons */
-        .cat-btn {
+        .cat-bttn {
             background: #0071A8;
             color: #fff;
             border: none;
@@ -82,13 +92,17 @@
             align-items: center;
         }
 
-        .cat-btn:hover {
+        .cat-bttn:hover {
             background: #005f87;
         }
 
         .boddy {
             background: #E5F0F5;
+            height: 208px;
+
         }
+
+
 
         .category-slider.active {
             cursor: grabbing;
@@ -102,14 +116,48 @@
 
 
 
-        .news-card {
-            border: 1px solid #0071A8 !important;
-            /* padding-left: 10px; */
+        .news-ccard {
+            max-width: 358px;
+            height: 260px;
+            transition: all 0.4s ease;
+
+            overflow: hidden;
         }
 
+        /* TITLE FIX HEIGHT */
         .news-title {
-            padding-left: 10px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            text-align: start;
+            /* width: 358px; */
+        }
 
+
+        /* BODY */
+        .boddyy {
+            background: #E5F0F5;
+            height: 160px;
+            padding: 15px;
+        }
+
+        .news-ccard:hover {
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+            transform: scale(1.02) translateY(5px);
+        }
+
+
+        .news-desc {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            line-height: 160%;
+            font-size: 12px;
+            font-weight: 700;
+            color: #00000080;
+            font-family: Arial;
         }
     </style>
 @endpush
@@ -501,10 +549,10 @@
                 <div class="row g-4">
                     @foreach ($bioMedicalBlogs as $bioMedicalBlog)
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="news-card bg-white">
+                            {{-- <div class="newss-card bg-white">
 
                                 <h5 class="news-title fw-bold mt-2 mb-2">{{ $bioMedicalBlog->title ?? '' }}</h5>
-                                <div class="p-3 boddy">
+                                <div class="p-3 boddyy">
 
                                     <p class="news-desc small text-muted mb-3">
                                         {{ $bioMedicalBlog->short_description ?? '' }}</p>
@@ -513,9 +561,33 @@
                                         class="read-more-link d-flex align-items-center justify-content-start text-decoration-none">
                                         Read More <i class="fas fa-arrow-right ms-2"></i>
                                     </a>
-                                    
+
+                                </div>
+                            </div> --}}
+                            <div class="card news-ccard bg-white border-0 ">
+
+                                <!-- CARD TITLE -->
+                                <div class="card-header bg-white border-0 ">
+                                    <h5 class="news-title  mb-2">
+                                        {{ $bioMedicalBlog->title ?? '' }}
+                                    </h5>
+                                </div>
+
+                                <!-- CARD BODY -->
+                                <div class="card-body boddyy d-flex flex-column justify-content-between">
+
+                                    <p class="news-desc small  mb-3">
+                                        {{ $bioMedicalBlog->short_description ?? '' }}
+                                    </p>
+
+                                    <a href="{{ route('blog.detail', $bioMedicalBlog->slug) }}"
+                                        class="read-more-link d-flex align-items-center text-decoration-none">
+                                        Read More <i class="fas fa-arrow-right ms-2"></i>
+                                    </a>
+
                                 </div>
                             </div>
+
                         </div>
                     @endforeach
                 </div>
