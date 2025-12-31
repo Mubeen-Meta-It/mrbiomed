@@ -1,2 +1,17 @@
 [variables]
-PHP_VERSION = "8.2"
+NIXPACKS_PHP_VERSION = "8.2"
+
+[phases.setup]
+# packages required for php extensions
+aptPkgs = ["libzip-dev", "zip", "unzip", "libpng-dev", "libjpeg-dev", "libfreetype6-dev"]
+
+[phases.build]
+cmds = [
+  "php -m | grep -E 'zip|gd' || true"
+]
+
+[phases.install]
+cmds = [
+  "docker-php-ext-configure gd --with-freetype --with-jpeg",
+  "docker-php-ext-install zip gd"
+]
