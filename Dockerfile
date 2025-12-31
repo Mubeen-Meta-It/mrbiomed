@@ -1,23 +1,50 @@
 FROM php:8.2-cli
 
-# System deps for gd + zip + mysql
+# -----------------------------
+# System deps (PHP extensions)
+# -----------------------------
 RUN apt-get update && apt-get install -y \
-    git unzip zip libzip-dev \
+    git unzip zip curl \
+    libzip-dev \
     libpng-dev libjpeg-dev libfreetype6-dev \
   && docker-php-ext-configure gd --with-freetype --with-jpeg \
   && docker-php-ext-install gd zip pdo_mysql \
   && rm -rf /var/lib/apt/lists/*
 
+# -----------------------------
+# Install Node.js (LTS)
+# -----------------------------
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+  && apt-get install -y nodejs
+
 WORKDIR /app
 
+# -----------------------------
 # Composer
+# -----------------------------
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-# Copy code
+# -----------------------------
+# Copy source
+# -----------------------------
 COPY . .
 
-# Install PHP deps (no scripts during build)
-RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts
+# -----------------------------
+# PHP deps
+# -----------------------------
+RUN composer install \
+    --no-dev \
+    --optimize-autoloader \
+    --no-interaction \
+    --no-scripts
 
-# Start server on Railway port
+# -----------------------------
+# Frontend build
+# -----------------------------
+RUN npm install
+RUN npm run production
+
+# -----------------------------
+# Start Laravel
+# -----------------------------
 CMD php -S 0.0.0.0:${PORT:-8080} -t public
