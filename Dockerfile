@@ -42,7 +42,7 @@ RUN composer install \
 # Frontend build
 # -----------------------------
 RUN npm install
-RUN npm run build
+RUN npm run dev
 
 # -----------------------------
 # Start Laravel
